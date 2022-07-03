@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EventsFragment"
+    android:background="@color/greenblue">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       >
+
+      <Button
+          android:id="@+id/eventcreatbutton"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="20dp"
+          android:backgroundTint="@color/orangelight"
+          android:text="Criar Evento"
+          android:textColor="@color/black" />
+
+      <TextView
+          android:id="@+id/nome"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Eventos"
+          android:textStyle="bold"
+          android:layout_marginLeft="20dp"
+
+          android:textColor="@color/black"
+          android:textSize="20sp" />
+
+
+
+
+      <TextView
+          android:id="@+id/eventvalue"
+          android:layout_width="75dp"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="120dp"
+          android:visibility="gone"
+          android:textSize="20sp" />
+
+
+
+      <ListView
+          android:id="@+id/listView"
+          android:layout_width="400dp"
+          android:layout_height="0dp"
+          android:layout_weight="1"
+          android:padding="10dp" >
+
+
+      </ListView>
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Eventos inscritos"
+          android:textColor="@color/black"
+          android:textStyle="bold"
+          android:layout_marginStart="20dp"
+          android:textSize="20dp"
+          />
+      <ListView
+          android:id="@+id/listRegisterEvents"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1"
+          android:padding="10dp"
+          />
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Os meus Eventos"
+          android:textColor="@color/black"
+          android:textStyle="bold"
+          android:textSize="20dp"
+          android:layout_marginLeft="20dp"
+          />
+      <ListView
+          android:id="@+id/listMyEvents"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1"
+          android:padding="10dp"
+          />
+
+
+
+
+   </LinearLayout>
+
+
+
+</LinearLayout>

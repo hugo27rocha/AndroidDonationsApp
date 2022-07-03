@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greenblue"
+    tools:context=".EventCreateFragment">
+
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Criar Evento"
+        android:textColor="@color/teal_700"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:background="@drawable/retanglebg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:context=".EventCreateFragment">
+
+        <Button
+            android:id="@+id/createEventButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@color/orangelight"
+            android:ems="10"
+            android:text="Criar Evento"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/eventdescedit"
+            tools:ignore="MissingConstraints" />
+
+
+        <EditText
+            android:id="@+id/eventnameedit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="8"
+            android:hint="Nome do Evento"
+
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toStartOf="@+id/editTextDate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/eventdescedit"
+            android:layout_width="355dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:ems="17"
+            android:hint="Descrição"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="@+id/district_edit"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/rua_edit"
+            app:layout_constraintTop_toBottomOf="@+id/rua_edit" />
+
+        <EditText
+            android:id="@+id/rua_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:ems="8"
+            android:hint="Morada"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toStartOf="@+id/district_edit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/eventnameedit" />
+
+        <EditText
+            android:id="@+id/district_edit"
+            android:layout_width="168dp"
+            android:layout_height="46dp"
+            android:ems="8"
+            android:hint="Distrito/Concelho"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="@+id/editTextDate"
+            app:layout_constraintTop_toTopOf="@+id/rua_edit" />
+
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="171dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="28dp"
+            android:ems="10"
+            android:hint="Data dd/mm/aa"
+            android:inputType="date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/eventnameedit" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

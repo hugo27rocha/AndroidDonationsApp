@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/lastname"
+        android:layout_width="160dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="208dp"
+        android:background="@drawable/edittext_bg"
+        android:hint="Último nome"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+        app:layout_constraintWidth_percent=".8" />
+
+    <EditText
+        android:id="@+id/firstname"
+        android:layout_width="159dp"
+        android:layout_height="43dp"
+        android:background="@drawable/edittext_bg"
+        android:hint="Primeiro nome"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.162"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.299"
+        app:layout_constraintWidth_percent=".8" />
+
+    <EditText
+        android:id="@+id/emailreg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_bg"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastname"
+        app:layout_constraintVertical_bias="0.045"
+        app:layout_constraintWidth_percent=".8" />
+
+    <EditText
+        android:id="@+id/passwordSignUp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_bg"
+        android:hint="Password"
+        android:minEms="100"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias=".5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailreg"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintWidth_percent=".8" />
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/confirm_password"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="20dp"-->
+    <!--        android:layout_marginBottom="8dp"-->
+    <!--        android:background="@drawable/edittext_bg"-->
+    <!--        android:hint="Confirm Password"-->
+    <!--        android:inputType="textPassword"-->
+    <!--        android:paddingLeft="20dp"-->
+    <!--        android:paddingTop="10dp"-->
+    <!--        android:paddingBottom="10dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias=".5"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/passwordSignUp"-->
+    <!--        app:layout_constraintVertical_bias="0"-->
+    <!--        app:layout_constraintWidth_percent=".8" />-->
+
+
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="329dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/orangelight"
+        android:text="Registo"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/passwordSignUp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/organization"
+        app:layout_constraintTop_toBottomOf="@+id/organization"
+        app:layout_constraintWidth_percent=".8" />
+
+    <Switch
+        android:id="@+id/organization"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Organização"
+        app:layout_constraintStart_toStartOf="@+id/passwordSignUp"
+        app:layout_constraintTop_toBottomOf="@+id/passwordSignUp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

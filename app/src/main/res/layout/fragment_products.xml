@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greenblue"
+    tools:context=".ProductsFragment">
+
+
+    <ListView
+        android:id="@+id/productsView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/whitegreen"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.14" />
+
+    <Spinner
+        android:id="@+id/category_spinner_search"
+        android:layout_width="169dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/itemcreatebutton"
+        app:layout_constraintStart_toStartOf="@+id/productsView"
+        app:layout_constraintTop_toTopOf="@+id/itemcreatebutton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/itemcreatebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/orangelight"
+        android:text="Adicionar Item"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/productsView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:background="@color/whitegreen"
+        android:layout_width="382dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/productsView"
+        app:layout_constraintStart_toStartOf="@+id/productsView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
